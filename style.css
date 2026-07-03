@@ -1,0 +1,13 @@
+:root{
+    --pruprle:#7c3aed;
+    --padleft:1.25rem ;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--pruprle);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: var(--bs-navbar-nav-link-padding-x);
+        padding-left: var(--padleft);
+}
