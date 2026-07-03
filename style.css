@@ -2,7 +2,9 @@
     --pruprle:#7c3aed;
     --padleft:1.25rem ;
 }
-
+section:not(#home){
+    padding: 3.125rem 0;
+}
 .navbar-nav .nav-link.active {
     color: var(--pruprle);
 }
@@ -11,3 +13,7 @@
         padding-right: var(--bs-navbar-nav-link-padding-x);
         padding-left: var(--padleft);
 }
+.card{
+    height: calc(100vh - 82.25px);
+}
+
