@@ -16,4 +16,20 @@ section:not(#home){
 .card{
     height: calc(100vh - 82.25px);
 }
+section#home{
+    background-image:
+     /* linear-gradient(var(--pruprle), var(--pruprle)), */
+    url(image/home-image.png);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position: right;
+}
+section#home .backfilter{
+    background-color: #7c3aed;
+    width: inherit;
+    height: inherit;
+    opacity: .7;
+    filter: brightness(.7);
+}
 
