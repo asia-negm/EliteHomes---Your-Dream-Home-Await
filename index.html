@@ -45,13 +45,83 @@
     </div>
   </div>
 </nav>
-<section class="card" id="home">
+<section class="card p-5" id="home">
   <div class="backfilter">
     <!-- <img src="image/home-image.png " class="card-img object-fit-fill border rounded" alt="..."> -->
-    <header class="py-4 card-img-overlay">
-         <h1 class="text-center fw-bold text-light">Find Your Dream Home</h1>
-         <p class="text-center lead fw-medium text-light">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
+    <header class="p-5 ">
+         <h1 class="text-center fw-bold text-light h1">Find Your Dream Home</h1>
+         <p class="text-center lead fw-medium text-light p-2 fs-4 m-auto">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
      </header>
+   <form class="row g-6 rounded-4">
+    <div class="inner"></div>
+   <div class="col-md-12 col-lg-6 g-4">
+    <label class="" for="autoSizingInputGroup">Location</label>
+    <div class="input-group">
+      <div class="input-group-text">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<i class="bi bi-geo-alt-fill"></i>
+   </div>
+      <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Enter city, neighborhood , or ZIP code">
+    </div>
+    </div>
+  <div class="col-md-12 col-lg-3 g-4">
+     <label class=" " for="autoSizingInputGroup">Property Type</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>All Types</option>
+    <option value="1">House</option>
+    <option value="2">Apartment</option>
+    <option value="3">condo</option>
+    <option value="3">townhoues</option>
+  </select>
+</div>
+  <div class="col-md-12 col-lg-3 g-4">
+     <label class=" " for="autoSizingInputGroup">Price Range</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Any Price</option>
+    <option value="1">$0 -$500k</option>
+    <option value="1">$500k - $1M</option>
+    <option value="1">$1M - $2M</option>
+    <option value="1">$2M+</option>
+  </select>
+</div>
+  <div class="col-md-6  col-lg-3 g-4">
+     <label class=" " for="autoSizingInputGroup">Bedrooms</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Any</option>
+    <option value="1">1+</option>
+    <option value="2">2+</option>
+    <option value="3">3+</option>
+    <option value="4">4+</option>
+    <option value="5">5+</option>
+  </select>
+</div>
+  <div class="col-md-6  col-lg-3 g-4">
+     <label class=" " for="autoSizingInputGroup">Bathrooms</label>
+  <select class="form-select" id="inputGroupSelect01">
+    <option selected>Any</option>
+    <option value="1">1+</option>
+    <option value="2">2+</option>
+    <option value="3">3+</option>
+    <option value="4">4+</option>
+  </select>
+</div>
+  <div class="col-md-6 col-lg-3 g-4">
+    <label for="Min">Min Sq Ft</label>
+ <input class="input-group-text" type="number" id="Min" name="Min" value="1,000">
+  </select>
+</div>
+  <div class="col-md-6 col-lg-3 g-4">
+    <label for="max">Max Sq Ft</label>
+ <input class="input-group-text" type="number" id="max" name="max" value="1,000">
+  </select>
+</div>
+<div class="d-grid gap-2 g-4">
+  <button class="btn btn-purple fw-bold fs-6" type="button">
+    <i class="bi bi-search px-2 fs-6"></i>
+    search properties</button>
+</div>
+</form>
 
   </div>
 
