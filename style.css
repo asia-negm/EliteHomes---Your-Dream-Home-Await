@@ -179,6 +179,7 @@ section:not(#home){
     left: 0;
     margin: .3125rem;
 }
+
 .duration-300{
     --tw-duration: .3s;
     transition-duration: .3s;
@@ -271,6 +272,9 @@ background: linear-gradient(to right, #8E51FF 0%, transparent 100%);
 .bg-voilet{
     background-color: var(--color-violet-100);
 }
+.bg-voilet-900{
+    background-color: var(--color-violet-900);
+}
 .color-voiltet{
     color: var(--color-violet-500);
 }
@@ -284,6 +288,29 @@ section#serivces .nav {
     --bs-nav-link-color: var(--color-gray-600);
     --bs-nav-link-hover-color: var(--color-violet-500);
     --bs-nav-link-disabled-color: var(--color-violet-400);
+}
+
+section#serivces ul {
+    text-decoration:none;
+    list-style: none;
+}
+
+
+.h-60 {
+    height: 60% !important;
+}
+.h-96{
+    height: calc(var(--spacing) * 96);
+}
+
+.left-6{
+    left: calc(var(--spacing) * -6);
+}
+.bottom-6{
+    bottom: calc(var(--spacing) * -6);
+}
+.p-6{
+    padding: calc(var(--spacing) * 6);
 }
 @media screen and (max-width:1022px){
     .backfilter{
