@@ -5,8 +5,8 @@
     --color-red-400: oklch(70.4% .191 22.216);
     --color-red-500: oklch(63.7% .237 25.331);
     --color-amber-400: oklch(82.8% .189 84.429);
-    --color-amber-500: oklch(76.9% .188 70.08);
-    --color-amber-600: oklch(66.6% .179 58.318);
+    --color-amber-500: #fe9a00;
+    --color-amber-600: #e17100;
     --color-yellow-100: oklch(97.3% .071 103.193);
     --color-yellow-600: oklch(68.1% .162 75.834);
     --color-yellow-700: oklch(55.4% .135 66.442);
@@ -109,6 +109,15 @@ section:not(#home){
 .navbar-nav .nav-link.active {
     color: var(--pruprle);
 }
+.w-8{
+    width: calc(var(--spacing) * 8);
+}
+.h-8 {
+    height: calc(var(--spacing) * 8);
+}
+.mr-2{
+    margin-right: calc(var(--spacing) * 2);
+}
 .text-gary-light{
     color: rgb(251, 251, 251);
 }
@@ -120,6 +129,12 @@ section:not(#home){
 }
 .h-64{
     height: calc(var(--spacing) * 64);
+}
+.h-22{
+    height: .125rem;
+}
+.w-16{
+    width: calc(.25rem * 16);
 }
 .overflow-hidden{
     overflow: hidden;
@@ -147,6 +162,10 @@ section:not(#home){
 }
 .text-gray-600 {
     color: var(--color-gray-600);
+}
+.card-bottom{
+    color: var(--color-violet-500);
+    background-color: var(--color-violet-100);
 }
 
 .bg-white-90 {
@@ -197,9 +216,6 @@ form{
     --bs-gutter-y: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-top: calc(-1 * var(--bs-gutter-y));
-    margin-right: calc(-.5 * var(--bs-gutter-x));
-    margin-left: calc(-.5 * var(--bs-gutter-x));
     margin: auto;
     padding: 20px;
 }
@@ -214,6 +230,51 @@ background-color: var(--pruprle);
     background-color: var(--color-violet-700);
     color: #fff;
 }
+
+.text-gradient{
+   background: linear-gradient(90deg, #7C3AED 30%, #FE9A00 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+.text-transparent {
+    color: #0000;
+}
+.text-xs{
+    font-size: var(--text-xs);
+    line-height: var(--text-xs--line-height);
+}
+.text-sm{
+    font-size: var(--text-sm);
+    line-height: var(--text-sm--line-height);
+}
+
+.bg-clip-text {
+    background-clip: text;
+}
+.text-lg{
+    font-size: 3rem;
+    line-height: 1;
+}
+.line-color{
+   background: #8E51FF;
+background: linear-gradient(to left, #8E51FF 0%, transparent 100%);
+}
+.line-color-right{
+       background: #8E51FF;
+background: linear-gradient(to right, #8E51FF 0%, transparent 100%);
+}
+.border-voilet{
+    border:1px solid  var(--color-violet-200);
+}
+.bg-voilet{
+    background-color: var(--color-violet-100);
+}
+.color-voiltet{
+    color: var(--color-violet-500);
+}
+
 @media screen and (max-width:1022px){
     .backfilter{
         width: 100%;
