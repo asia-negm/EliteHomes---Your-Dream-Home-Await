@@ -11,7 +11,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary py-3 ">
   <div class="container">
     <a class="navbar-brand  h1 fs-3" href="#">EliteHomes</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button"   data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse " id="navbarNavDropdown">
@@ -45,17 +45,52 @@
     </div>
   </div>
 </nav>
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h2 class="offcanvas-title" id="offcanvasTopLabel">EliteHomes</h2>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="navbar-nav ms-auto">
+       <li class="nav-item">
+         <a class="nav-link navbar-hover link-underline fw-bold " aria-current="page" href="#">Home</a>
+       </li>
+       <li class="nav-item dropdown navbar-hover">
+         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Properties
+         </a>
+         <ul class="dropdown-menu navbar-hover">
+           <li><a class="dropdown-item navbar-hover" href="#">Action</a></li>
+           <li><a class="dropdown-item navbar-hover" href="#">Another action</a></li>
+           <li><a class="dropdown-item navbar-hover" href="#">Something else here</a></li>
+         </ul>
+       </li>
+       <li class="nav-item navbar-hover">
+         <a class="nav-link" href="#">Services</a>
+       </li>
+       <li class="nav-item navbar-hover">
+         <a class="nav-link" href="#">Testimonials</a>
+       </li>
+       <li class="nav-item navbar-hover">
+         <a class="nav-link" href="#">FAQ</a>
+       </li>
+       <li class="nav-item navbar-hover">
+         <a class="nav-link" href="#">Contact</a>
+       </li>
+     </ul> 
+  </div>
+</div>
 <section class="card p-5" id="home">
   <div class="backfilter">
     <!-- <img src="image/home-image.png " class="card-img object-fit-fill border rounded" alt="..."> -->
-    <header class="p-5 ">
-         <h1 class="text-center fw-bold text-light h1">Find Your Dream Home</h1>
-         <p class="text-center lead fw-medium text-light p-2 fs-4 m-auto">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
+    <header class="p-4 ">
+         <h1 class="text-center text-light">Find Your Dream Home</h1>
+         <p class="text-center lead fw-medium text-gary-light p-2 fs-4 m-auto">Discover exceptional properties in prime locations. From modern condos to luxury estates, we help you find the perfect place to call home.</p>
      </header>
    <form class="row g-6 rounded-4">
     <div class="inner"></div>
    <div class="col-md-12 col-lg-6 g-4">
-    <label class="" for="autoSizingInputGroup">Location</label>
+    <label class="block text-sm font-medium text-gary-700 mb-2" for="autoSizingInputGroup">Location</label>
     <div class="input-group">
       <div class="input-group-text">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -66,7 +101,7 @@
     </div>
     </div>
   <div class="col-md-12 col-lg-3 g-4">
-     <label class=" " for="autoSizingInputGroup">Property Type</label>
+     <label class="block text-sm font-medium text-gary-700 mb-2 " for="autoSizingInputGroup">Property Type</label>
   <select class="form-select" id="inputGroupSelect01">
     <option selected>All Types</option>
     <option value="1">House</option>
@@ -76,7 +111,7 @@
   </select>
 </div>
   <div class="col-md-12 col-lg-3 g-4">
-     <label class=" " for="autoSizingInputGroup">Price Range</label>
+     <label class="block text-sm font-medium text-gary-700 mb-2 " for="autoSizingInputGroup">Price Range</label>
   <select class="form-select" id="inputGroupSelect01">
     <option selected>Any Price</option>
     <option value="1">$0 -$500k</option>
@@ -86,7 +121,7 @@
   </select>
 </div>
   <div class="col-md-6  col-lg-3 g-4">
-     <label class=" " for="autoSizingInputGroup">Bedrooms</label>
+     <label class="block text-sm font-medium text-gary-700 mb-2 " for="autoSizingInputGroup">Bedrooms</label>
   <select class="form-select" id="inputGroupSelect01">
     <option selected>Any</option>
     <option value="1">1+</option>
@@ -97,7 +132,7 @@
   </select>
 </div>
   <div class="col-md-6  col-lg-3 g-4">
-     <label class=" " for="autoSizingInputGroup">Bathrooms</label>
+     <label class="block text-sm font-medium text-gary-700 mb-2 " for="autoSizingInputGroup">Bathrooms</label>
   <select class="form-select" id="inputGroupSelect01">
     <option selected>Any</option>
     <option value="1">1+</option>
@@ -107,13 +142,13 @@
   </select>
 </div>
   <div class="col-md-6 col-lg-3 g-4">
-    <label for="Min">Min Sq Ft</label>
- <input class="input-group-text" type="number" id="Min" name="Min" value="1,000">
+    <label class="block text-sm font-medium text-gary-700 mb-2" for="Min">Min Sq Ft</label>
+ <input class="input-group-text w-full" type="number" id="Min" name="Min" placeholder="1,000">
   </select>
 </div>
   <div class="col-md-6 col-lg-3 g-4">
-    <label for="max">Max Sq Ft</label>
- <input class="input-group-text" type="number" id="max" name="max" value="1,000">
+    <label class="block text-sm font-medium text-gary-700 mb-2" for="max">Max Sq Ft</label>
+ <input class="input-group-text" type="number" id="max" name="max" placeholder="5,000">
   </select>
 </div>
 <div class="d-grid gap-2 g-4">
@@ -122,10 +157,38 @@
     search properties</button>
 </div>
 </form>
+<article>
+  <div class="container py-3">
+    <div class="row text-center">
+      <div class="col-md-6 col-lg-3">
+        <h2 class="fw-bold text-light">15,000+</h2>
+        <p class="text-light">Active Listings</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h2 class="fw-bold text-light">98%</h2>
+        <p class="text-light">Client Satisfaction</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h2 class="fw-bold text-light">500+</h2>
+        <p class="text-light">Expert Agents</p>
+      </div>
+      <div class="col-md-6 col-lg-3">
+        <h2 class="fw-bold text-light">25</h2>
+        <p class="text-light">Years Experience</p>
+      </div>
+    </div>
+  </div>
+</article>
 
   </div>
 
 </section>
-    
+
+<section id="featured properties">
+<div class="container">
+</div>
+</section>
+
+<script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>
