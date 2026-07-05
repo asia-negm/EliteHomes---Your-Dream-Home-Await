@@ -274,7 +274,17 @@ background: linear-gradient(to right, #8E51FF 0%, transparent 100%);
 .color-voiltet{
     color: var(--color-violet-500);
 }
-
+.nav-pills {
+    --bs-nav-pills-border-radius: 0;
+    --bs-nav-pills-link-active-color: var(--color-violet-700);
+    --bs-nav-pills-link-active-bg:var(--color-violet-200);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+section#serivces .nav {
+    --bs-nav-link-color: var(--color-gray-600);
+    --bs-nav-link-hover-color: var(--color-violet-500);
+    --bs-nav-link-disabled-color: var(--color-violet-400);
+}
 @media screen and (max-width:1022px){
     .backfilter{
         width: 100%;
