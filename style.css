@@ -97,6 +97,12 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
 }
+*{
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+}
 section:not(#home){
     padding: 3.125rem 0;
 }
@@ -106,6 +112,21 @@ section:not(#home){
 .text-gary-light{
     color: rgb(251, 251, 251);
 }
+.text-violte{
+    color: var(--color-violet-700);
+}
+.text-gray-600{
+    color: var(--color-gray-600);
+}
+.h-64{
+    height: calc(var(--spacing) * 64);
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.object-cover{
+    object-fit: cover;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: var(--bs-navbar-nav-link-padding-x);
         padding-left: var(--padleft);
@@ -114,7 +135,45 @@ section:not(#home){
     color: var(--color-violet-500);
     background-color:var(--color-violet-100) ;
 }
-.card{
+.heart-hover:hover{
+    color: red;
+}
+.heart-hover{
+    top: 0;
+    right: 0;
+    padding: 15px 6px;
+    border-radius: 40%;
+    margin: 5px;
+}
+.text-gray-600 {
+    color: var(--color-gray-600);
+}
+
+.bg-white-90 {
+        background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
+    }
+.card-1bage{
+    background-color: var(--color-violet-500);
+}
+.badge-photo{
+    top: 0;
+    left: 0;
+    margin: .3125rem;
+}
+.duration-300{
+    --tw-duration: .3s;
+    transition-duration: .3s;
+}
+.bage-icon-photo{
+    bottom: .25rem;
+    left: .25rem;
+}
+
+.img-hover:hover{
+    transform: scale(1.15) ;
+    transition-timing-function: ease-in-out;
+}
+section#home .card{
     height: calc(100vh - 82.25px);
 }
 section#home{
@@ -124,14 +183,6 @@ section#home{
     background-size:cover;
     background-position: right;
 }
-/* section#home .backfilter{
-    background-color: #7c3aed;
-    width: inherit;
-    height: inherit;
-    opacity: .7;
-    filter: brightness(.7);
-    z-index: -1;
-} */
 .backfilter{
     width: 50%;
     margin: auto;
