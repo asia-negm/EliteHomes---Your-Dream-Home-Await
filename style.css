@@ -160,6 +160,22 @@ section:not(#home){
 .object-cover{
     object-fit: cover;
 }
+.carousel-control-prev-icon {
+    background-color: rgba(138, 43, 226, 0.5); 
+    border-radius: 50%;
+}
+.carousel-control-prev-icon:hover {
+    background-color: rgba(138, 43, 226, 1); 
+    border-radius: 50%;
+}
+.carousel-control-next-icon{
+     background-color: rgba(138, 43, 226, 0.5); 
+    border-radius: 50%;
+}
+.carousel-control-next-icon:hover{
+     background-color: rgba(138, 43, 226, 1); 
+    border-radius: 50%;
+}
 .navbar-expand-lg .navbar-nav .nav-link {
         padding-right: var(--bs-navbar-nav-link-padding-x);
         padding-left: var(--padleft);
@@ -171,6 +187,34 @@ section:not(#home){
 .heart-hover:hover{
     color: red;
 }
+
+
+element.style {
+}
+.carousel-indicators .active {
+    opacity: 1;
+}
+.carousel-indicators [data-bs-target] {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-right: 15%;
+    margin-bottom: 1rem;
+    margin-left: 15%;
+}
+
+
+
 .footer-top{
     border-bottom: 0.2px solid var(--color-gray-50);
     width: 70%;
