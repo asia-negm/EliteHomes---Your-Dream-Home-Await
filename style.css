@@ -186,6 +186,9 @@ section:not(#home){
 .bg-white-90 {
         background-color: color-mix(in oklab, var(--color-white) 90%, transparent);
     }
+.bg-white {
+        background-color: var(--color-white);
+    }
 .card-1bage{
     background-color: var(--color-violet-500);
 }
@@ -193,6 +196,9 @@ section:not(#home){
     top: 0;
     left: 0;
     margin: .3125rem;
+}
+.rounded-2xl{
+    border-radius: var(--radius-2xl);
 }
 
 .duration-300{
@@ -298,8 +304,14 @@ background: linear-gradient(to right, #8E51FF 0%, transparent 100%);
 .bg-voilet-900{
     background-color: var(--color-violet-900);
 }
+.bg-voilet-600{
+    background-color: var(--color-violet-600);
+}
 .color-voiltet{
     color: var(--color-violet-500);
+}
+.color-white{
+    color: #fff;
 }
 .nav-pills {
     --bs-nav-pills-border-radius: 0;
@@ -342,12 +354,38 @@ section#serivces ul {
 .bottom-6{
     bottom: calc(var(--spacing) * -6);
 }
-
+.py-6{
+    padding-block: calc(var(--spacing) * 6);
+}
+.px-8{
+    padding-inline: calc(var(--spacing) * 8);
+}
 .p-6{
     padding: calc(var(--spacing) * 6);
 }
 .p-8 {
     padding: calc(var(--spacing) * 8);
+}
+
+.mx-auto {
+    margin-inline: auto;
+}
+.max-w-4xl {
+    max-width: var(--container-4xl);
+}
+.accordion-button {
+    font-size: 1.25rem; 
+}
+
+.accordion-item{
+    color: var(--color-gray-900);
+    background-color: var(--bs-accordion-bg);
+    border: 0;
+}
+.accordion {
+    --bs-accordion-active-color: var(--color-gray-900);
+    --bs-accordion-active-bg: var(--color-gray-100);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--color-gray-100);
 }
 @media screen and (max-width:1022px){
     .backfilter{
