@@ -210,10 +210,7 @@ section:not(#home){
     left: .25rem;
 }
 
-.img-hover:hover{
-    transform: scale(1.15) ;
-    transition-timing-function: ease-in-out;
-}
+
 section#home .card{
     height: calc(100vh - 82.25px);
 }
@@ -387,6 +384,32 @@ section#serivces ul {
     --bs-accordion-active-bg: var(--color-gray-100);
     --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem var(--color-gray-100);
 }
+.card-link{
+    text-decoration: none
+}
+
+.contact-card{
+     transition: transform 0.3s ease;
+}
+.contact-card:hover{
+    border: 1px solid var(--color-violet-500);
+    transform: scale(1.05);
+}
+.contact-card:hover .icon-contact{
+    transform: scale(1.05);
+}
+.icon-contact{
+    transition: transform 0.3s ease;
+}
+.img-hover{
+    transition: transform 0.3s ease;
+}
+
+
+.img-hover:hover{
+  transform: scale(1.05);
+}
+
 @media screen and (max-width:1022px){
     .backfilter{
         width: 100%;
