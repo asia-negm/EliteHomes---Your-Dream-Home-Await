@@ -189,6 +189,9 @@ section:not(#home){
 .bg-white {
         background-color: var(--color-white);
     }
+.bg-gray {
+        background-color: var(--color-gray-100);
+    }
 .card-1bage{
     background-color: var(--color-violet-500);
 }
@@ -272,6 +275,10 @@ background-color: var(--pruprle);
     font-size: var(--text-xl);
     line-height: var(--text-xl--line-heightt);
 }
+.text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
 
 .bg-clip-text {
     background-clip: text;
@@ -284,9 +291,17 @@ background-color: var(--pruprle);
     font-size: var(--text-lg);
     line-height: var(--text-lg--line-height);
 }
+.text-s{
+    font-size: var(text);
+    line-height: var(--text-lg--line-height);
+}
 .line-color{
    background: #8E51FF;
 background: linear-gradient(to left, #8E51FF 0%, transparent 100%);
+}
+.line-color-buttom{
+   background: #8E51FF;
+background: linear-gradient(to left, #8E51FF 100%, transparent 100%);
 }
 .line-color-right{
        background: #8E51FF;
@@ -295,20 +310,43 @@ background: linear-gradient(to right, #8E51FF 0%, transparent 100%);
 .border-voilet{
     border:1px solid  var(--color-violet-200);
 }
+.border-gray{
+    border:1px solid  var(--color-gray-100);
+}
+
 .bg-voilet{
     background-color: var(--color-violet-100);
 }
+.bg-voilet-400{
+    background-color: var(--color-violet-400);
+}
+.bg-voilet-50{
+    background-color: var(--color-violet-50);
+}
+
 .bg-voilet-900{
     background-color: var(--color-violet-900);
 }
 .bg-voilet-600{
     background-color: var(--color-violet-600);
 }
+.bg-gray-50{
+    background-color: var(--color-gray-50);
+}
 .color-voiltet{
     color: var(--color-violet-500);
 }
+.color-red{
+    color: var(--color-red-400);
+}
+.color-blue{
+    color: var(--color-indigo-500);
+}
 .color-white{
     color: #fff;
+}
+.bg-white{
+    background-color: #fff;
 }
 .nav-pills {
     --bs-nav-pills-border-radius: 0;
@@ -387,7 +425,12 @@ section#serivces ul {
 .card-link{
     text-decoration: none
 }
-
+.contact-buttom{
+transition: transform 0.3s ease;
+}
+.contact-buttom:hover{
+    transform: scale(1.02);
+}
 .contact-card{
      transition: transform 0.3s ease;
 }
@@ -409,7 +452,40 @@ section#serivces ul {
 .img-hover:hover{
   transform: scale(1.05);
 }
+form{
+    background-color: white;
+    text-align: left;
+}
+.send-message  .row {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 0;
+}
 
+.form-control:focus {
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+    border-color:var(--color-violet-500);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--color-violet-200);
+}
+.form-select:focus {
+    border-color: var(--color-violet-500);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--color-violet-200);
+}
+.form-check-input:checked{
+    background-color:var(--color-violet-400);
+    border-color: var(--color-violet-400);
+}
+.form-check-input:focus {
+    border-color: var(--color-violet-200);
+    outline: 0;
+    box-shadow: 0 0 0 .25rem var(--color-violet-300)
+}
 @media screen and (max-width:1022px){
     .backfilter{
         width: 100%;
