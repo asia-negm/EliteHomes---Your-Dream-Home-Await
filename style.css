@@ -397,13 +397,26 @@ background-color: var(--pruprle);
    background: #8E51FF;
 background: linear-gradient(to left, #8E51FF 0%, transparent 100%);
 }
+.line-color-orange{
+background: #EF8947;
+background: linear-gradient(90deg, #EF8947, #67167C);
+}
+.line-color{
+   background: #8E51FF;
+background: linear-gradient(to left, #8E51FF 0%, transparent 100%);
+}
 .line-color-buttom{
    background: #8E51FF;
 background: linear-gradient(to left, #8E51FF 100%, transparent 100%);
+
 }
 .line-color-right{
        background: #8E51FF;
 background: linear-gradient(to right, #8E51FF 0%, transparent 100%);
+}
+.line-color-right-orange{
+background: #EF8947;
+background: linear-gradient(270deg, #EF8947, #67167C);
 }
 .border-voilet{
     border:1px solid  var(--color-violet-200);
