@@ -118,7 +118,7 @@ section:not(#home){
 .mr-2{
     margin-right: calc(var(--spacing) * 2);
 }
-.text-gary-light{
+.text-gray-light{
     color: rgb(251, 251, 251);
 }
 .text-violte{
@@ -188,9 +188,6 @@ section:not(#home){
     color: red;
 }
 
-
-element.style {
-}
 .carousel-indicators .active {
     opacity: 1;
 }
@@ -212,8 +209,6 @@ element.style {
     margin-bottom: 1rem;
     margin-left: 15%;
 }
-
-
 
 .footer-top{
     border-bottom: 0.2px solid var(--color-gray-50);
@@ -247,6 +242,15 @@ element.style {
     }
 .card-1bage{
     background-color: var(--color-violet-500);
+}
+.card-2bage{
+    background-color: var(--color-green-600);
+}
+.card-3bage{
+    background-color: var(--color-amber-500);
+}
+.line-through{
+    text-decoration-line: line-through
 }
 .badge-photo{
     top: 0;
@@ -331,6 +335,10 @@ background-color: var(--pruprle);
 .text-3xl {
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
+}
+.text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
 }
 
 .bg-clip-text {
@@ -624,6 +632,49 @@ form{
     border-radius: 50%;
     transform: translate(100%, -100%);
      border: 3px solid var(--color-violet-200);
+}
+/* ////////////////////////////// */
+.mega-menu {
+    width: min(1000px, 95vw);
+    left: 50% !important;
+    transform: translateX(-50%);
+}
+.nav-item.dropdown:hover .mega-menu {
+    display: block;
+}
+
+
+.mega-item {
+    transition: background-color 0.2s ease;
+}
+.mega-item:hover {
+    background-color: var(--color-violet-50);
+}
+
+
+.mega-location img,
+.mega-resource {
+    transition: transform 0.3s ease;
+}
+.mega-location:hover img {
+    transform: scale(1.05);
+}
+.mega-resource:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.12);
+}
+
+.text-green-600 {
+    color: var(--color-green-600);
+}
+
+
+@media (max-width: 991px) {
+    .mega-menu {
+        width: 100% !important;
+        transform: none;
+        left: 0 !important;
+    }
 }
 @media screen and (max-width:1022px){
     .backfilter{
