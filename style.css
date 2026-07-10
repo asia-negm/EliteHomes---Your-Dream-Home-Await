@@ -109,6 +109,25 @@ section:not(#home){
 .navbar-nav .nav-link.active {
     color: var(--pruprle);
 }
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.nav-underline{
+    --bs-nav-underline-link-active-color: var(--color-violet-400);
+    gap: var(--bs-nav-underline-gap);
+}
+.navbar {
+    --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
+    --bs-navbar-hover-color: var(--color-violet-500);
+    --bs-navbar-disabled-color: rgba(var(--bs-emphasis-color-rgb), 0.3);
+    --bs-navbar-active-color: var(--color-violet-600);
+    --bs-navbar-brand-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-brand-hover-color: rgba(var(--bs-emphasis-color-rgb), 1);
+    --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
+}
 .w-8{
     width: calc(var(--spacing) * 8);
 }
