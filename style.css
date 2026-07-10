@@ -399,6 +399,7 @@ background-color: var(--pruprle);
 
 .bg-clip-text {
     background-clip: text;
+    
 }
 .text-lg{
     font-size: 3rem;
@@ -413,8 +414,8 @@ background-color: var(--pruprle);
     line-height: var(--text-lg--line-height);
 }
 .line-color{
-   background: #8E51FF;
-background: linear-gradient(to left, #8E51FF 0%, transparent 100%);
+ background: #67167C;
+background: linear-gradient(90deg,rgba(103, 22, 124, 1) 0%, rgba(142, 81, 255, 1) 50%, rgba(255, 102, 0, 1) 100%);
 }
 .line-color-orange{
 background: #EF8947;
@@ -499,6 +500,9 @@ section#serivces ul {
 }
 .text-amber-400{
     color: var(--color-amber-400);
+}
+.text-pink-600{
+    color: var(--color-pink-600);
 }
 .bottom-40{
    bottom: -10rem;
@@ -612,6 +616,26 @@ transition: transform 0.3s ease;
 .contact-card:hover{
     border: 1px solid var(--color-violet-500);
     transform: scale(1.05);
+}
+.contact-card-1:hover{
+    border: 1px solid var(--color-purple-600);
+    transform: scale(1.05);
+}
+.contact-card-1:hover{
+    border: 1px solid var(--color-purple-600);
+    transform: scale(1.05);
+}
+.contact-card-2:hover{
+    border: 1px solid var(--color-pink-600);
+    transform: scale(1.05);
+}
+.contact-card-3:hover{
+    border: 1px solid var(--color-indigo-500);
+    transform: scale(1.05);
+}
+.liner-bg{
+    background: #E12AFB;
+background: linear-gradient(90deg,rgba(225, 42, 251, 1) 0%, rgba(254, 154, 0, 1) 100%);
 }
 .contact-card:hover .icon-contact{
     transform: scale(1.05);
