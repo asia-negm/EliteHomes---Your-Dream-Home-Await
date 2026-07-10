@@ -622,6 +622,9 @@ transition: transform 0.3s ease;
 .img-hover{
     transition: transform 0.3s ease;
 }
+.z-index{
+    z-index: -2;
+}
 
 
 .img-hover:hover{
